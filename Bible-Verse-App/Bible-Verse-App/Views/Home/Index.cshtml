@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Bible Benchmark</h1>
+    <p class="lead">Welcome to the best place on the internet for just adding and viewing bible verses</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Click below to add a bible verse
+        </p>
+        @Html.ActionLink("Add Verse", "Index", "BibleVerse", null,  new { @class = "btn btn-primary" })
+    </div>
+    <div class="col-md-4">
+        <h2>View Your Verses</h2>
+        <p>OR Click this button in order to search through the Bible Verses you have already added</p>
+        @Html.ActionLink("Search Verses", "GoToSearch", "BibleVerse", null, new { @class = "btn btn-primary" })
+    </div>
+    
+</div>

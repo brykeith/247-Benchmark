@@ -1,0 +1,58 @@
+﻿@model Bible_Verse_App.Models.BibleVerse
+
+@{
+    ViewBag.Title = "VerseSuccessfullyAdded";
+}
+
+<h2>VerseSuccessfullyAdded</h2>
+
+<div>
+    <h4>BibleVerse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Testament)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Testament)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Book)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Book)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChapterNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChapterNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VerseNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VerseNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VerseText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VerseText)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
